@@ -1,0 +1,97 @@
+.product-card {
+  padding: 0;
+  display: block;
+  margin: 10px;
+  background: white;
+  width: 350px;
+  height: 407px;
+  border-radius: 30px;
+
+  box-shadow: 0px 0px 20px 0px #0000001a;
+
+  .product-picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 219.61px;
+    height: 237.07px;
+    margin-bottom: 69.62px;
+  }
+
+  .product-info {
+    box-sizing: border-box;
+    width: 310.04px;
+    height: 74px;
+    margin-left: 21.96px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .price {
+    color: #ffa542;
+    &:after {
+      content: " ₽";
+    }
+  }
+
+  .price--discount {
+    color: #ffa542;
+    //color: #ffce7f;
+  }
+
+  .price--discount ~ .price {
+    color: #ffce7f;
+    text-decoration: line-through;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 15.85px;
+    text-align: center;
+  }
+
+  .product-info__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  button {
+    background: none;
+    border: none;
+  }
+
+  .product__name,
+  .price,
+  .price--discount {
+    font-family: Montserrat;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 20.72px;
+    text-align: left;
+  }
+
+  .rating {
+    display: flex;
+    justify-content: flex-start;
+    justify-content: center;
+    box-sizing: border-box;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 20.72px;
+    color: #838383;
+
+    .star {
+      width: 23.33px;
+      height: 21.93px;
+    }
+  }
+
+  .buy-product-btn {
+    width: 65px;
+    height: 21px;
+    text-align: right;
+  }
+}
